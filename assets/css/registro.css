@@ -1,0 +1,115 @@
+.pasos-registracion {
+    width: 600vw;
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    left: 0;
+    transition: 0.4s;
+}
+
+.content {
+    flex: none;
+    width: 100vw;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .texto-adicional {
+    font-size: 18px;
+    text-align: center;
+}
+
+.content .texto-adicional.font-bold {
+    font-family: var(--ff-bold);
+}
+
+.content .texto-adicional.text-left {
+    text-align: left;
+}
+
+.content form {
+    width: 100%;
+    padding: 0 200px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content form .input-group {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content form .input-group input {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    outline: none;
+    font-size: 20px;
+}
+
+.content form select {
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    border: 1px solid #000;
+    border-radius: 10px;  
+    font-size: 20px;  
+}
+
+
+.content form .input-group label {
+    padding: 0 20px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 20px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.content form .input-group input:focus + label {
+    top: -10px;
+    left: 15px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.content form .input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 15px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.content form select:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 15px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+
+
+.content button {
+    padding: 10px 40px;
+    background: #48e;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}

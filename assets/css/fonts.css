@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'BrokmanLight';
+    src: url('fonts/BrokmanLight.eot');
+    src: url('fonts/BrokmanLight.eot') format('embedded-opentype'),
+         url('fonts/BrokmanLight.woff2') format('woff2'),
+         url('fonts/BrokmanLight.woff') format('woff'),
+         url('fonts/BrokmanLight.ttf') format('truetype'),
+         url('fonts/BrokmanLight.svg#BrokmanLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'BrokmanRegular';
+    src: url('fonts/BrokmanRegular.eot');
+    src: url('fonts/BrokmanRegular.eot') format('embedded-opentype'),
+         url('fonts/BrokmanRegular.woff2') format('woff2'),
+         url('fonts/BrokmanRegular.woff') format('woff'),
+         url('fonts/BrokmanRegular.ttf') format('truetype'),
+         url('fonts/BrokmanRegular.svg#BrokmanRegular') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'BrokmanMedium';
+    src: url('fonts/Brokman\ Medium.otf');
+}
+
+
+@font-face {
+    font-family: 'BrokmanBold';
+    src: url('fonts/BrokmanBold.eot');
+    src: url('fonts/BrokmanBold.eot') format('embedded-opentype'),
+         url('fonts/BrokmanBold.woff2') format('woff2'),
+         url('fonts/BrokmanBold.woff') format('woff'),
+         url('fonts/BrokmanBold.ttf') format('truetype'),
+         url('fonts/BrokmanBold.svg#BrokmanBold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'BrokmanExtrabold';
+    src: url('fonts/BrokmanExtrabold.eot');
+    src: url('fonts/BrokmanExtrabold.eot') format('embedded-opentype'),
+         url('fonts/BrokmanExtrabold.woff2') format('woff2'),
+         url('fonts/BrokmanExtrabold.woff') format('woff'),
+         url('fonts/BrokmanExtrabold.ttf') format('truetype'),
+         url('fonts/BrokmanExtrabold.svg#BrokmanExtrabold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'BrokmanItalic';
+    src: url('fonts/BrokmanItalic.eot');
+    src: url('fonts/BrokmanItalic.eot') format('embedded-opentype'),
+         url('fonts/BrokmanItalic.woff2') format('woff2'),
+         url('fonts/BrokmanItalic.woff') format('woff'),
+         url('fonts/BrokmanItalic.ttf') format('truetype'),
+         url('fonts/BrokmanItalic.svg#BrokmanItalic') format('svg');
+}

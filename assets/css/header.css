@@ -1,0 +1,175 @@
+/* === HEADER === */
+
+header {
+    width: 100%;
+    height: var(--altura-header);
+    padding: 0 70px;
+    background: #fff;
+    box-shadow: 0 4px 4px #0004;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-priset {
+    height: 70%;
+}
+
+.logos-gob {
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-priset img,
+.logos-gob img {
+    height: 100%;
+}
+
+.logos-gob img:nth-of-type(2) {
+    height: 80%;
+}
+
+.logos-gob .linea-vertical {
+    width: 2px;
+    height: 100%;
+    background: var(--color-1);
+}
+
+
+.botones {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.botones img {
+    width: 30px;
+}
+
+.botones > a {
+    font-family: var(--ff-bold);
+    font-size: 20px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/* === FOOTER === */
+
+footer {
+    width: 100%;
+    padding: 80px clamp(40px, 10vw, 100px);
+
+    background: linear-gradient(to right, #040000 0%, #4b0014 100%);
+    color: #fff;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+footer .logo-redes img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer .logo-redes i {
+    font-size: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .footer-redes {
+    display: flex !important;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .footer-redes i {
+    width: 30px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #fff6;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer-mini {
+    width: 100%;
+    padding: 20px clamp(40px, 10vw, 100px);
+
+    background: linear-gradient(to right, #040000 0%, #4b0014 100%);
+    color: #fff;
+}
+
+.footer-mini .logo-redes {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-mini .logo-redes img {
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+
+.footer-mini .footer-redes {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-mini .footer-redes i {
+    width: 30px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #fff6;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}

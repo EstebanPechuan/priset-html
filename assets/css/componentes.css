@@ -1,0 +1,900 @@
+/* === Franja Naranja === */
+
+.separador-naranja {
+    width: 100%;
+}
+
+.separador-naranja .separador-texto {
+    width: 100%;
+    background: var(--color-2);
+}
+
+.separador-naranja h3 {
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 34px;
+    font-family: var(--ff-medium);
+}
+
+.borde-naranja {
+    width: 100%;
+    height: 5px;
+    background: var(--color-2-rgba);
+    margin-top: 5px;
+}
+
+
+/* === Botones === */
+
+.btn {
+    width: 100% !important;
+    max-width: 200px;
+    min-width: 200px;
+    height: 47px;
+    /* display: inline-block; */
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--ff-bold);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ghost-magenta {
+    color: var(--color-8);
+    border: 2px solid var(--color-8);
+}
+
+.btn-fill-magenta {
+    color: #fff;
+    border: 2px solid var(--color-8);
+    background: var(--color-8);
+}
+
+.btn.disable {
+    background: #aaa !important;
+    color: #fff;
+    border: 2px solid #aaa !important;
+}
+
+.btn.disable-ghost {
+    color: #aaa;
+    border: 2px solid #aaa !important;
+}
+
+
+.btn-bg-gris {
+    width: 415px;
+    height: 50px;
+    background: #f6f6f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px #0004;
+}
+
+.btn-bg-gris a {
+    width: 100%;
+    height: 100%;
+    color: var(--color-1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-bg-gris a strong {
+    margin-left: 4px;
+}
+
+ 
+ 
+/* === Botón Card === */
+
+.card-priset {
+    width: 100%;
+    max-width: 310px;
+    height: 115px;
+    transition: 0.4s;
+}
+
+.card-priset .card-main {
+    width: 100%;
+    max-width: 310px;
+    height: 115px;
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 4px #0004;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.card-priset .card-content {
+    width: 100%;
+    height: calc(100% - 4px);
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-priset .card-content .card-content-img {
+    width: 56px;
+    aspect-ratio: 1/1;
+}
+
+.card-priset .card-content .card-content-titulo h4 {
+    font-size: 24px;
+    color: var(--color-1);
+}
+
+.card-priset .card-img-footer {
+    width: 100%;
+    height: 4px;
+}
+
+
+
+.card-priset .card-desplegable {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.4s;
+}
+
+.card-priset .card-desplegable p {
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+    background: #f7f7f7;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+
+    transition: 0.4s;
+}
+
+.card-priset.active {
+    height: auto !important;
+}
+
+.card-priset.active .card-desplegable {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-priset.active .card-desplegable p {
+    top: 0;
+}
+
+
+
+.cards-arrow {
+    height: 115px;
+
+    display: flex;
+    align-items: center;
+}
+
+.cards-arrow img {
+    width: 29px;
+    height: 21px;
+}
+
+
+
+/* === Que ofrecemos Cards === */
+
+.card-que_ofrece {
+    box-shadow: 0 4px 4px #0004;
+    width: 100%;
+    max-width: 310px;
+    height: 65px;
+    border-radius: 8px 8px 0 0;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card-que_ofrece .que_ofrece-content {
+    width: 100%;
+    height: calc(100% - 4px);
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.card-que_ofrece .que_ofrece-content .que_ofrece-content-titulo h4 {
+    font-size: 24px;
+    color: var(--color-1);
+}
+
+.card-que_ofrece .card-img-footer {
+    width: 100%;
+    height: 4px;
+}
+
+
+.card-que_ofrece.active {
+    background: #f6f6f6;
+    opacity: 1;
+}
+
+
+/* === Teléfonos Útiles Cards === */
+
+.telefonos-utiles {
+    width: 100%;
+    max-width: 310px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px #0004;
+    cursor: pointer;
+}
+
+.telefonos-utiles .tel-util-content {
+    width: 100%;
+    height: calc(100% - 4px);
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.telefonos-utiles .tel-util-content .tel-util-content-titulo h4 {
+    font-size: 20px;
+    color: var(--color-1);
+    text-align: center;
+    font-family: var(--ff-regular);
+}
+
+.telefonos-utiles .tel-util-content .tel-util-content-telefonos.tel-import h4 {
+    font-size: 36px;
+    text-align: center;
+    font-family: var(--ff-bold);
+}
+
+.telefonos-utiles .tel-util-content .tel-util-content-telefonos {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    place-items: center start;
+    gap: 20px;
+}
+
+.telefonos-utiles .tel-util-content .tel-util-content-telefonos img {
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+
+.telefonos-utiles .tel-util-content .tel-util-content-telefonos h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.telefonos-utiles .card-img-footer {
+    width: 100%;
+    height: 4px;
+}
+
+
+.tel-util-content .tel-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* === Módulos Card === */
+
+.card-modulos {
+    width: 100%;
+    max-width: 170px;
+    min-height: 170px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px #0004;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-modulos .modulos-img {
+    width: 42px;
+    aspect-ratio: 1/1;
+}
+
+.card-modulos .modulos-titulo {
+    text-align: center;
+}
+
+
+
+/* === Noticias === */
+
+/* Programas - Acciones */
+.programa-accion {
+    width: 100%;
+    max-width: 255px;
+}
+
+.prog-img {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.prog-texto {
+    padding: 20px 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prog-texto a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prog-texto a img {
+    width: 20px;
+}
+
+
+
+/* Noticias - Eventos */
+
+
+.contenedor-columns {
+    width: 100%;
+    columns: 2;
+    gap: 15px;
+}
+
+
+.noticias-eventos {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px #0004;
+    margin-bottom: 15px;
+}
+
+.noticias-eventos:nth-child(1) .noti-img {
+    height: 300px;
+}
+
+.noti-img {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.noti-texto {
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noti-texto a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.noti-texto a img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Progress Bar === */
+
+.progress {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(199, 199, 199);
+    overflow: hidden;
+    position: relative;
+}
+
+.mascara-gradient{
+    width: calc(100% + 40px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 100%); 
+    transition: 0.4s;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #A53709 0%, #BF2051 19.39%, #E5004F 40.63%, #E8462F 60.42%, #F29200 81.25%, #FCE579 100%);
+}
+
+
+
+
+
+
+
+
+/* === FORMULARIO === */
+
+input {
+    width: 415px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 2px solid #0009;
+    color: #000;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+    outline: none;
+
+    display: flex;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Number Input */
+input[type="number"],
+input[type="number"]:focus,
+input[type="number"]:hover {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Password Input */
+.password-input {
+    width: 415px;
+    height: 50px;
+    position: relative;
+}
+
+.password-input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 0 60px 0 20px;
+    border: 2px solid #0009;
+    color: #000;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+
+    display: flex;
+    align-items: center;
+}
+
+.password-input .pass-icons {
+    height: 50px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.password-input .pass-icons img {
+    height: 100%;
+}
+
+
+input[type="submit"],
+input[type="subbuttonit"] {
+    color: #fff;
+    border: 2px solid var(--color-8);
+    background: var(--color-8);
+    cursor: pointer !important;
+}
+
+input[type="submit"].disable,
+input[type="button"].disable {
+    background: #aaa !important;
+    color: #fff;
+    border: 2px solid #aaa !important;
+}
+
+input[type="submit"]:valid,
+input[type="button"]:valid {
+    color: #fff;
+    border: 2px solid var(--color-8);
+    background: var(--color-8);
+}
+
+input[type="submit"]:invalid,
+input[type="button"]:invalid {
+    background: #aaa !important;
+    color: #fff;
+    border: 2px solid #aaa !important;
+}
+
+
+
+/* Estilos SELECT */
+
+.select-input {
+    width: 100%;
+    max-width: 415px;
+    height: 50px;
+    max-height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#select-programas::after {
+    content: '';
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 0 50px 50px 0;
+    border: 2px solid #0009;
+    border-left: none;
+}
+
+.select-input .sel-icons {
+    height: 100%;
+    padding: 20px;
+    margin-right: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;    
+    user-select: none;
+    transform: scaleY(0.6);
+    font-weight: bold;
+}
+
+.select-input .sel-icons img {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background: transparent;
+    border: 2px solid #0009;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+}
+
+select option {
+    display: inline-block;
+    font-family: var(--ff-medium) !important;
+    background: #fff;
+    padding: 20px 0 !important;
+}
+
+select option:nth-child(even) {
+    background: #ddd;
+}
+
+datalist {
+    font-family: var(--ff-medium) !important;
+    background: #fff;
+}
+
+
+
+/* Estilos CALENDAR */
+
+/* Number Input */
+input[type="date"]:focus {
+    opacity: 1;
+}
+
+input[type="date"] {
+    opacity: 0;
+}
+
+.date-input {
+    width: 415px;
+    height: 50px;
+    position: relative;
+    background: transparent;
+    border-radius: 8px;
+    background: transparent;
+}
+
+.date-input output {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    background: #fff;
+    border: 2px solid #0009;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+}
+
+.date-input .date-icons {
+    height: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.date-input .date-icons img {
+    height: 100%;
+}
+
+
+
+/* Tabla Estado Civil */
+
+.tabla-estado-civil {
+    width: 100%;
+}
+
+.estCivil-row {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: minmax(250px, 2fr) minmax(150px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    gap: 15px;
+}
+
+.estCivil-row:nth-child(1) div {
+    background: #f6f6f6;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: var(--ff-bold);
+}
+
+.estCivil-row:nth-child(1) div:nth-child(1) {
+    text-align: left;
+}
+
+.estCivil-row input {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #0006;
+}
+
+
+
+
+/* Dashborard */
+
+.perfil-lateral {
+    width: 100%;
+    max-width: 300px;
+    height: calc(100vh - var(--altura-header));
+    background: #fff;
+    box-shadow: 4px 4px 4px #0004;
+    border-radius: 0 0 100px 0;
+    position: sticky;
+    top: var(--altura-header);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-lateral .foto-nombre {
+    padding-top: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-lateral .perfil-foto {
+    position: relative;
+}
+
+.perfil-lateral .foto-img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid var(--color-1);
+    background: #eee;
+    overflow: hidden;
+}
+
+.perfil-lateral .boton-camara input {
+    display: none;
+}
+
+.perfil-lateral .boton-camara label {
+    width: 30px;
+    aspect-ratio: 1/1;
+    background: var(--color-1);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.perfil-lateral .boton-camara label > * {
+    filter: invert();
+    transform: scale(0.8);
+}
+
+.perfil-lateral .accesos-usuario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card-accesos_usuario {
+    width: 100%;
+    max-width: 310px;
+    height: 55px;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.card-accesos_usuario .que_ofrece-content {
+    width: 100%;
+    height: calc(100% - 4px);
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-accesos_usuario .que_ofrece-content-titulo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-accesos_usuario .que_ofrece-content .que_ofrece-content-titulo img {
+    width: 35px;
+    aspect-ratio: 1/1;
+}
+
+.card-accesos_usuario .que_ofrece-content .que_ofrece-content-titulo p {
+    font-size: 20px;
+    color: var(--color-1);
+    font-family: var(--ff-medium);
+}
+
+.card-accesos_usuario .que_ofrece-img-footer img {
+    width: 100%;
+    height: 4px;
+}
+
+.card-accesos_usuario.active {
+    opacity: 1;
+}
+
+.card-accesos_usuario:hover {
+    opacity: 1;
+}
+
+.perfil-lateral .accesos-usuario a {
+    color: #000c;
+    margin-top: 20px;
+}
+
+
+
+
+/* === Progress Bar === */
+
+.progress {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(199, 199, 199);
+    overflow: hidden;
+    position: relative;
+}
+
+.mascara-gradient{
+    width: calc(100% + 40px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 100%); 
+    transition: 0.4s;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #A53709 0%, #BF2051 19.39%, #E5004F 40.63%, #E8462F 60.42%, #F29200 81.25%, #FCE579 100%);
+}
