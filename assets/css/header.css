@@ -37,6 +37,7 @@ header {
 .logo-priset img,
 .logos-gob img {
     height: 100%;
+    object-fit: contain;
 }
 
 .logos-gob img:nth-of-type(2) {

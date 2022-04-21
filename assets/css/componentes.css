@@ -1,3 +1,13 @@
+/* === Flecha Volver === */
+.flecha-volver {
+    margin: 20px 0;
+}
+
+.flecha-volver a {
+    font-family: var(--ff-bold);
+    font-size: 20px;
+}
+
 /* === Franja Naranja === */
 
 .separador-naranja {

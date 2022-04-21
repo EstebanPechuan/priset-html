@@ -5,6 +5,7 @@
 @import url('header.css');
 @import url('views/registro.css');
 @import url('views/dashboard.css');
+@import url('views/modulo_alimentario.css');
 
 *,
 *::before,
@@ -78,6 +79,19 @@ main h2 {
 
 .d-none {
     display: none;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flex-sp_e {

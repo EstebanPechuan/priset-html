@@ -167,3 +167,33 @@ function delayVideo(video) {
         video.play()
     }, 250);
 }
+
+
+// === Proceso de entrega ===
+// Buscar Programa
+function buscarPrograma(value) {
+    if(value === 'alimentario') {
+        let alimentario = document.querySelector('.mod-alim-buscar')
+        alimentario.style.display = 'flex'
+    } else {
+        let alimentario = document.querySelector('.mod-alim-buscar')
+        alimentario.style.display = 'none'
+    }
+}
+
+// Abrir input para CUIL
+function openInputAlimentario() {
+    let alimentario = document.querySelector('.mod-alim-buscar')
+    alimentario.style.display = 'none'
+    
+    let cuilAlimentario = document.querySelector('.input-cuil-alimentario')
+    cuilAlimentario.classList.remove('d-none')
+    cuilAlimentario.classList.add('d-flex-center')
+}
+
+// Open Modal Actualización Datos
+function modalActualizacion() {
+    const formModal = document.querySelector('.completar-datos')
+
+    formModal.classList.add('completar-datos-click')
+}
