@@ -22,3 +22,73 @@
     z-index: 500;
     opacity: 1;
 }
+
+.completar-datos .modal-gris {
+    max-width: 600px;
+    padding: 30px 40px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.completar-datos .modal-gris img {
+    width: 40px;
+}
+
+
+/* Actualización datos persona */
+.actualizar-datos {
+    width: 100%;
+}
+
+.actualizar-datos hr {
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.actualizar-datos .subtitulo-rojo {
+    padding: 30px 0 20px;
+    color: var(--color-5);
+    font-family: var(--ff-medium);
+    font-size: 24px;
+}
+
+.actualizar-datos form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.actualizar-datos form .input-group {
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.actualizar-datos form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 2px solid #0009;
+    background: #000;
+    color: #fff;
+  }
+
+
+.cantidad,
+.motivos {
+    width: 100vw;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }

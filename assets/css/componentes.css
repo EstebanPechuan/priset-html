@@ -97,6 +97,10 @@
     margin-left: 4px;
 }
 
+.btn-fill-naranja {
+    background: var(--color-2);
+    color: #fff;
+}
  
  
 /* === Botón Card === */
@@ -483,7 +487,8 @@
 /* === FORMULARIO === */
 
 input {
-    width: 415px;
+    width: 100%;
+    max-width: 415px;
     height: 50px;
     border-radius: 8px;
     padding: 0 20px;
@@ -492,6 +497,22 @@ input {
     font-size: 16px;
     font-family: var(--ff-medium);
     outline: none;
+
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 415px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid #0009;
+    color: #000;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+    outline: none;
+    resize: none;
 
     display: flex;
     align-items: center;
@@ -517,7 +538,8 @@ input::-webkit-inner-spin-button {
 
 /* Password Input */
 .password-input {
-    width: 415px;
+    width: 100%;
+    max-width: 415px;
     height: 50px;
     position: relative;
 }
@@ -552,7 +574,7 @@ input::-webkit-inner-spin-button {
 
 
 input[type="submit"],
-input[type="subbuttonit"] {
+input[type="button"] {
     color: #fff;
     border: 2px solid var(--color-8);
     background: var(--color-8);
@@ -667,7 +689,8 @@ input[type="date"] {
 }
 
 .date-input {
-    width: 415px;
+    width: 100%;
+    max-width: 415px;
     height: 50px;
     position: relative;
     background: transparent;

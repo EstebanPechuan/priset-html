@@ -174,10 +174,12 @@ function delayVideo(video) {
 function buscarPrograma(value) {
     if(value === 'alimentario') {
         let alimentario = document.querySelector('.mod-alim-buscar')
-        alimentario.style.display = 'flex'
+        alimentario.classList.add('d-flex-center-column')
+        alimentario.classList.remove('d-none')
     } else {
         let alimentario = document.querySelector('.mod-alim-buscar')
-        alimentario.style.display = 'none'
+        alimentario.classList.remove('d-flex-center-column')
+        alimentario.classList.add('d-none')
     }
 }
 
@@ -196,4 +198,71 @@ function modalActualizacion() {
     const formModal = document.querySelector('.completar-datos')
 
     formModal.classList.add('completar-datos-click')
+}
+
+
+// Cantidad Módulos
+function cantidadModulos(cant) {
+    const cantidad = document.querySelector('.cantidad')
+    if(cant >= 2) {
+
+        let cant = `
+        <div class="select-input">
+            <div class="sel-icons" style="border-radius: 50px;">
+                &#x22c1;
+            </div>
+            
+            <div class="tap-blan"></div>
+                
+            <select name="" id="" style="border-radius: 50px;" onchange="motivo(this.value)">
+                <option value="">¿Por qué motivo?</option>
+                <option value="familiar">Por el grupo familiar</option>
+                <option value="discapacidad">Por discapacidad</option>
+                <option value="enfermedad">Por enfermedad</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>`
+
+        cantidad.innerHTML = cant
+    } else {
+        const motivos = document.querySelector('.motivos')
+
+        cantidad.innerHTML = ''
+        motivos.innerHTML = ''
+    }
+}
+
+// Cantidad Módulos
+function motivo(motivo) {
+    const motivos = document.querySelector('.motivos')
+    if(motivo == 'discapacidad') {
+        let motivo = `
+            <input
+                style="border-radius: 50px"
+                type="text"
+                placeholder="Nombrar discapacidad">
+        `
+        motivos.innerHTML = motivo
+    } else if(motivo == 'enfermedad') {
+        let motivo = `
+            <input
+                style="border-radius: 50px"
+                type="text"
+                placeholder="Nombrar enfermedad">
+        `
+        motivos.innerHTML = motivo
+    } else if(motivo == 'otro') {
+        let motivo = `
+            <textarea
+                style="border-radius: 20px"
+                rows="5"
+                placeholder="Describir motivo"></textarea>
+        `
+        motivos.innerHTML = motivo
+    } else {
+        const cantidad = document.querySelector('.cantidad')
+
+        motivos.innerHTML = ''
+        cantidad.innerHTML = ''
+    }
 }
