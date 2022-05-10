@@ -83,15 +83,15 @@ function cantidadFamilia(cantidad) {
             resultado +=
                 `<div class="estCivil-row">
                     <div class="estCivil-nombre">
-                        <input type="text">
+                        <input type="text" name="nombre_pariente[]">
                     </div>
 
                     <div class="estCivil-cuil">
-                        <input type="text">
+                        <input type="text" name="cuil_pariente[]">
                     </div>
 
-                    <div class="estCivil edad">
-                        <input type="text">
+                    <div class="estCivil-edad">
+                        <input type="text" name="edad_pariente[]">
                     </div>
 
                     <div class="estCivil-parentesco">
@@ -102,7 +102,7 @@ function cantidadFamilia(cantidad) {
 
                             <div class="tap-blan"></div>
 
-                            <select name="" id="">
+                            <select name="parentesco_pariente[]"" id="">
                                 <option value="">Parentesco</option>
                                 <option value="Padre">Padre</option>
                                 <option value="Madre">Madre</option>
@@ -121,36 +121,6 @@ function cantidadFamilia(cantidad) {
         
     }
 }
-
-
-// === Progress Bar ===
-
-const stepsRegistro = document.querySelector('.pasos-registracion')
-const buttonAtras = document.querySelectorAll('.buttonAtras')
-const buttonSiguiente = document.querySelectorAll('.buttonSiguiente')
-const mascaraGradient = document.querySelector('.mascara-gradient')
-
-let leftSteps = 0
-let leftMascara = 0
-
-buttonSiguiente.forEach(button => {
-    button.addEventListener('click', () => {
-        leftSteps -= 100
-        leftMascara += 20
-        stepsRegistro.style.left = `${leftSteps}vw`
-        mascaraGradient.style.left = `calc(${leftMascara}% - 40px)`
-    })
-})
-
-buttonAtras.forEach(button2 => {
-    button2.addEventListener('click', () => {
-        leftSteps += 100
-        leftMascara -= 20
-        stepsRegistro.style.left = `${leftSteps}vw`
-        mascaraGradient.style.left = `calc(${leftMascara}% - 40px)`
-    })
-})
-
 
 
 // Mostrar video de validación de proceso

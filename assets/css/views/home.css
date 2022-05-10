@@ -1,0 +1,146 @@
+.hero {
+  width: 100%;
+  min-height: 400px;
+  padding: 0 200px 0 150px;
+  background: var(--color-1);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__info {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.hero__info h1 {
+  font-size: 40px;
+  font-family: var(--ff-bold);
+}
+
+.hero__info p {
+  font-size: 22px;
+}
+
+.hero__img {
+  max-width: 250px;
+}
+
+.tramitar {
+  align-items: flex-start !important;
+  gap: 30px;
+}
+
+.organigrama > p {
+  font-size: 20px;
+}
+
+.organigrama__info {
+  margin: 30px 0;
+}
+
+.organigrama__info img {
+  pointer-events: none;
+}
+
+.direcciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.direccion {
+  min-height: 300px;
+  border: 2px solid var(--color-elemento-interno);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.direccion:nth-child(1) {
+  --color-elemento-interno: var(--color-1);
+}
+
+.direccion:nth-child(2) {
+  --color-elemento-interno: #b23e0d;
+}
+
+.direccion:nth-child(3) {
+  --color-elemento-interno: var(--color-2);
+}
+
+.direccion:nth-child(4) {
+  --color-elemento-interno: var(--color-11);
+}
+
+.direccion__header {
+  background: var(--color-elemento-interno);
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.direccion__header::after {
+  content: "";
+  width: 30px;
+  aspect-ratio: 1/1;
+  border: 15px solid transparent;
+  border-top-color: var(--color-elemento-interno);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%) scaleX(3);
+}
+
+.direcciones__internas {
+  padding: 10px;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.direccion__interna {
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid var(--color-elemento-interno);
+  border-radius: 8px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.direccion__interna a {
+  display: block;
+  width: 80px;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  background: var(--color-elemento-interno);
+  border-radius: 30px;
+}
+
+.telefonos__primer,
+.telefonos__segunda {
+  gap: 100px;
+}
+
+.telefonos > p {
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--ff-bold);
+  margin: 20px 0;
+}

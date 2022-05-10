@@ -8,7 +8,7 @@
 
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        <h2>Bienvenid@ &#60;Nombre y Apellido&#62;</h2>
+        <h2>Registro</h2>
 
         <div class="progress">
             <div class="progress-bar gradient">
@@ -41,32 +41,13 @@
             <div class="content content1">
                 <div class="separador-naranja">
                     <div class="separador-texto">
-                        <h3>Datos personales</h3>
+                        <h3>Tipo de institución</h3>
                     </div>
                     <div class="borde-naranja"></div>
                 </div>
-
-                <p class="texto-adicional">¡Necesitamos que completes una serie de datos!
-                    <br>
-                    No olvides que debes completar la información con los mismo datos que aparecen en tu D.N.I</p>
                 
-                <form action="" method="GET" oninput="alert(nombre_pariente)">
-                    <!-- Nombre y Apellido -->
-                    <input type="text" placeholder="Nombre y Apellido">
-
-                    <!-- Fecha de Nacimineto -->
-                    <div class="date-input">
-                        <input id="fecha_nacimiento" type="date" onchange="if (fecha_nacimiento.value !== '') {result.value = fecha_nacimiento.value} else {result.value = 'Fecha de Nacimiento'}">
-                        <output name="result" for="fecha_nacimiento">
-                            Fecha de Nacimiento
-    
-                            <div class="date-icons">
-                                <img src="../assets/img/calendar.svg" alt="">
-                            </div>
-                        </output>    
-                    </div>
-
-                    <!-- Genero -->
+                <form oninput="if(categoria.value == 'Asociación sin fines de lucro') {fundacion.classList.remove('d-none')} else {fundacion.classList.add('d-none')}" action="" style="flex-direction: column; align-items: center;">
+                    <!-- Categoría -->
                     <div class="select-input">
                         <div class="sel-icons">
                             &#x22c1;
@@ -74,134 +55,31 @@
     
                         <div class="tap-blan"></div>
     
-                        <select name="" id="">
-                            <option value="Nacionalidad">Género</option>
-                            <option value="Hombre">Hombre</option>
-                            <option value="Mujer">Mujer</option>
-                            <option value="No binario">No binario</option>
+                        <select name="categoria" id="categoria" >
+                            <option value="">Categoría</option>
+                            <option value="Asociación sin fines de lucro">Asociación sin fines de lucro</option>
+                            <option value="Municipio">Municipio</option>
+                            <option value="Escuelas">Escuelas</option>
+                            <option value="Universidad">Universidad</option>
+                            <option value="Otros">Otros</option>
                         </select>
                     </div>
 
-                    <!-- Cuil -->
-                    <input type="number" placeholder="Cuil">
-                    
-                    <!-- Nacionalidad -->
-                    <div class="select-input">
-                        <div class="sel-icons">
-                            &#x22c1;
-                        </div>
-                        
-                        <div class="tap-blan"></div>
-                        
-                        <select name="" id="">
-                            <option value="Nacionalidad">Nacionalidad</option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Brasil">Brasil</option>
-                            <option value="Paraguay">Paraguay</option>
-                            <option value="Uruguay">Uruguay</option>
-                            <option value="Bolivia">Bolivia</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Provincia -->
-                    <div class="select-input">
+                    <!-- Subcategoría -->
+                    <div name="fundacion" class="select-input d-none" id="fundacion">
                         <div class="sel-icons">
                             &#x22c1;
                         </div>
     
                         <div class="tap-blan"></div>
     
-                        <select name="" id="">
-                            <option value="Nacionalidad">Provincia</option>
-                            <option value="San Juan">San Juan</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Buenos Aires">Buenos Aires</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="Salta">Salta</option>
-                            <option value="">...</option>
+                        <select id="">
+                            <option value="Fundación">Fundación</option>
+                            <option value="Institución intermedia">Institución intermedia</option>
+                            <option value="Merendero">Merendero</option>
+                            <option value="ONG">ONG</option>
+                            <option value="Unión vecinal">Unión vecinal</option>
                         </select>
-                    </div>
-
-                    <!-- Localidad -->
-                    <div class="select-input">
-                        <div class="sel-icons">
-                            &#x22c1;
-                        </div>
-    
-                        <div class="tap-blan"></div>
-    
-                        <select name="" id="">
-                            <option value="Nacionalidad">Localidad</option>
-                            <option value="Santa Lucía">Santa Lucía</option>
-                            <option value="Capital">Capital</option>
-                            <option value="Rivadavia">Rivadavia</option>
-                            <option value="Chimbas">Chimbas</option>
-                            <option value="Rawson">Rawson</option>
-                            <option value="">...</option>
-                        </select>
-                    </div>
-
-                    <!-- Barrio -->
-                    <input type="text" placeholder="Barrio">
-
-                    <!-- Dirección -->
-                    <input type="text" placeholder="Dirección">
-
-                    <!-- Teléfono Fijo -->
-                    <input type="number" placeholder="Teléfono Fijo">
-
-                    <!-- Teléfono Celular -->
-                    <input type="number" placeholder="Teléfono Celular">
-
-                    <!-- Tipo EMAIL -->
-                    <input type="email" placeholder="Mail">
-
-                    <!-- Estado Civil -->
-                    <input type="text" placeholder="Estado civil">
-
-                    <!-- Cantidad Personas -->
-                    <input type="text" placeholder="Cantidad de Personas en Grupo Familiar" onchange="cantidadFamilia(this.value)">
-                    
-                    <!-- Conectividad -->
-                    <div class="select-input">
-                        <div class="sel-icons">
-                            &#x22c1;
-                        </div>
-    
-                        <div class="tap-blan"></div>
-    
-                        <select name="" id="">
-                            <option value="Nacionalidad">Conectividad</option>
-                            <option value="Si">Si</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                </form>
-                <div class="tabla-estado-civil container">        
-                    <!-- Filas generadas automáticamente -->
-                </div>
-
-                <hr>
-
-                <form action="">
-
-                    <!-- Tipo PASSWORD / SHOW PASSWORD -->
-                    <div class="password-input">
-                        <div class="pass-icons">
-                            <img src="../assets/img/show.svg" alt="" class="d-none">
-                            <img src="../assets/img/hidden.svg" alt="">
-                        </div>
-
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-
-                    <div class="password-input">
-                        <div class="pass-icons">
-                            <img src="../assets/img/show.svg" alt="" class="d-none">
-                            <img src="../assets/img/hidden.svg" alt="">
-                        </div>
-
-                        <input type="password" placeholder="Repetir Contraseña">
                     </div>
                 </form>
 
@@ -853,7 +731,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="../sets/js/main.js"></script>
 
     <script>
         // === Progress Bar ===
