@@ -96,6 +96,11 @@
   margin-left: 4px;
 }
 
+.btn-fill-naranja {
+  background: var(--color-2);
+  color: #fff;
+}
+
 /* === Botón Card === */
 
 .card-priset {
@@ -445,6 +450,7 @@
 /* === FORMULARIO === */
 
 input {
+<<<<<<< HEAD
   width: 415px;
   height: 50px;
   border-radius: 8px;
@@ -454,9 +460,37 @@ input {
   font-size: 16px;
   font-family: var(--ff-medium);
   outline: none;
+=======
+    width: 100%;
+    max-width: 415px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: 2px solid #0009;
+    color: #000;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+    outline: none;
+>>>>>>> 1e74a0d77a21abeef47a1486b03ad470a08b8313
 
   display: flex;
   align-items: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 415px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 2px solid #0009;
+    color: #000;
+    font-size: 16px;
+    font-family: var(--ff-medium);
+    outline: none;
+    resize: none;
+
+    display: flex;
+    align-items: center;
 }
 
 input:focus {
@@ -478,9 +512,16 @@ input::-webkit-inner-spin-button {
 
 /* Password Input */
 .password-input {
+<<<<<<< HEAD
   width: 415px;
   height: 50px;
   position: relative;
+=======
+    width: 100%;
+    max-width: 415px;
+    height: 50px;
+    position: relative;
+>>>>>>> 1e74a0d77a21abeef47a1486b03ad470a08b8313
 }
 
 .password-input input {
@@ -512,11 +553,19 @@ input::-webkit-inner-spin-button {
 }
 
 input[type="submit"],
+<<<<<<< HEAD
 input[type="subbuttonit"] {
   color: #fff;
   border: 2px solid var(--color-8);
   background: var(--color-8);
   cursor: pointer !important;
+=======
+input[type="button"] {
+    color: #fff;
+    border: 2px solid var(--color-8);
+    background: var(--color-8);
+    cursor: pointer !important;
+>>>>>>> 1e74a0d77a21abeef47a1486b03ad470a08b8313
 }
 
 input[type="submit"].disable,
@@ -623,12 +672,22 @@ input[type="date"] {
 }
 
 .date-input {
+<<<<<<< HEAD
   width: 415px;
   height: 50px;
   position: relative;
   background: transparent;
   border-radius: 8px;
   background: transparent;
+=======
+    width: 100%;
+    max-width: 415px;
+    height: 50px;
+    position: relative;
+    background: transparent;
+    border-radius: 8px;
+    background: transparent;
+>>>>>>> 1e74a0d77a21abeef47a1486b03ad470a08b8313
 }
 
 .date-input output {
