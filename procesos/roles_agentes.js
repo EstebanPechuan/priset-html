@@ -48,7 +48,9 @@ const crearFila = (agente) => {
             <div class="tabla__rol">${agente.rol}</div>
             <div class="tabla__acciones">
                 <button onclick="">
-                    <img src="../assets/img/editar.png" title="Editar">
+                    <a href="./nuevo_rol.html">
+                        <img src="../assets/img/editar.png" title="Editar">
+                    </a>
                 </button>
                 <button onclick="">
                     <img onclick="openModalDelete(this)" src="../assets/img/delete.png" title="Eliminar">

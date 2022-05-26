@@ -45,12 +45,12 @@
         </div>
 
         <form action="" onchange="filtrarTabla({
-            rolAgente: rolAgente.value
+            rol: rol.value
         })">
-            <div class="filtros-agentes container">
-                <div class="filter_agente">
+            <div class="filtros-roles container">
+                <div class="filter_roles">
                     <h3>Roles</h3>
-                    <select name="rolAgente" id="rolAgente">
+                    <select name="rol" id="rol">
                         <option value="todos">Todos</option>
                         <option value="administrador">Administrador</option>
                         <option value="coordinador">Coordinador</option>
@@ -58,15 +58,11 @@
                         <option value="visor">Visor</option>
                     </select>
                 </div>
-
-                <div class="nuevo_agente">
-                    <a href="./nuevo_rol.html" class="btn disable">+ Nuevo rol</a>
-                </div>
             </div>
         </form>
 
         <div class="scrollX">
-            <div class="tabla__agentes container">
+            <div class="tabla__roles container">
                 <!-- Acá se importan los agentes desde JS -->
             </div>
         </div>
@@ -99,27 +95,28 @@
             .scrollX::-webkit-scrollbar {
                 width: 0px;
             }
-            .tabla__agentes {
+            .tabla__roles {
                 /* width: fit-content !important; */
                 margin-bottom: 50px;
                 overflow-x: scroll;
             }
-            .tabla__agentes .tabla__agentes__titulos,
-            .tabla__agentes .tabla__agentes__info {
+            .tabla__roles .tabla__roles__titulos,
+            .tabla__roles .tabla__roles__info {
                 width: 100%;
                 display: grid;
                 grid-template-columns: 
                                         minmax(250px, 2fr)
                                         minmax(200px, 2fr)
                                         minmax(150px, 2fr)
+                                        minmax(150px, 2fr)
                                         minmax(100px, 1fr);
                 gap: 2px;
             }
-            .tabla__agentes .tabla__agentes__titulos,
-            .tabla__agentes .tabla__agentes__info {
+            .tabla__roles .tabla__roles__titulos,
+            .tabla__roles .tabla__roles__info {
                 background: #ccc;
             }
-            .tabla__agentes .tabla__agentes__titulos > div {
+            .tabla__roles .tabla__roles__titulos > div {
                 padding: 15px;
                 text-align: center;
                 background: var(--color-1);
@@ -128,7 +125,7 @@
                 justify-content: center;
                 align-items: center;
             }
-            .tabla__agentes .tabla__agentes__info > div {
+            .tabla__roles .tabla__roles__info > div {
                 padding: 15px;
                 text-align: center;
                 color: #000;
@@ -136,10 +133,10 @@
                 justify-content: center;
                 align-items: center;
             }
-            .tabla__agentes .tabla__agentes__info:nth-child(even) > div {
+            .tabla__roles .tabla__roles__info:nth-child(even) > div {
                 background: #f4f4f4;
             }
-            .tabla__agentes .tabla__agentes__info:nth-child(odd) > div {
+            .tabla__roles .tabla__roles__info:nth-child(odd) > div {
                 background: #fff;
             }
             .tabla__evaluacion img,
@@ -150,19 +147,19 @@
             .tabla__ver img {
                 cursor: pointer;
             }
-            .filtros-agentes {
+            .filtros-roles {
                 margin: 50px 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: 50px;
                 gap: 20px 50px;
             }
-            .filtros-agentes .filter_agente {
+            .filtros-roles .filter_roles {
                 display: grid;
                 grid-template-columns: 200px 1fr;
                 gap: 0;
             }
-            .filtros-agentes h3 {
+            .filtros-roles h3 {
                 margin: 10px 0;
             }
             .tabla__rol {
@@ -180,7 +177,7 @@
             .tabla__acciones img {
                 width: 25px;
             }
-            .nuevo_agente {
+            .nuevo_rol {
                 display: flex;
                 justify-content: end;
             }
@@ -215,6 +212,6 @@
     </script>
     
     <script src="../assets/js/main.js"></script>
-    <script src="roles_agentes.js"></script>
+    <script src="aprobacion_roles.js"></script>
 </body>
 </html>
