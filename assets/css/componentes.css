@@ -5,14 +5,11 @@
   font-size: 20px;
 }
 
-/* .flecha-volver a {
-} */
-
 /* === Franja Naranja === */
 
 .separador-naranja {
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0 40px;
 }
 
 .separador-naranja .separador-texto {
@@ -42,25 +39,13 @@
   max-width: 200px;
   min-width: 200px;
   height: 47px;
-  /* display: inline-block; */
   border-radius: 8px;
   font-size: 16px;
   font-family: var(--ff-bold);
-
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-
-.btn-ghost-magenta {
-  color: var(--color-8);
-  border: 2px solid var(--color-8);
-}
-
-.btn-fill-magenta {
-  color: #fff;
-  border: 2px solid var(--color-8);
-  background: var(--color-8);
+  cursor: pointer !important;
 }
 
 .btn.disable {
@@ -72,6 +57,21 @@
 .btn.disable-ghost {
   color: #aaa;
   border: 2px solid #aaa !important;
+}
+
+.btn-fill-naranja {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff !important;
+  border: 2px solid var(--color-2) !important;
+  background: var(--color-2) !important;
 }
 
 .btn-bg-gris {
@@ -86,6 +86,7 @@
   width: 100%;
   height: 100%;
   color: var(--color-1);
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -94,11 +95,6 @@
 
 .btn-bg-gris a strong {
   margin-left: 4px;
-}
-
-.btn-fill-naranja {
-  background: var(--color-2);
-  color: #fff;
 }
 
 /* === Botón Card === */
@@ -365,6 +361,8 @@
 
 .noticias-eventos {
   width: 100%;
+  min-width: 280px;
+  height: fit-content;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px #0004;
@@ -449,8 +447,10 @@
 
 /* === FORMULARIO === */
 
-input {
-  width: 415px;
+input,
+.input {
+  width: 100%;
+  max-width: 415px;
   height: 50px;
   border-radius: 8px;
   padding: 0 20px;
@@ -459,22 +459,6 @@ input {
   font-size: 16px;
   font-family: var(--ff-medium);
   outline: none;
-
-  display: flex;
-  align-items: center;
-}
-
-textarea {
-  width: 100%;
-  max-width: 415px;
-  border-radius: 8px;
-  padding: 10px 20px;
-  border: 2px solid #0009;
-  color: #000;
-  font-size: 16px;
-  font-family: var(--ff-medium);
-  outline: none;
-  resize: none;
 
   display: flex;
   align-items: center;
@@ -499,7 +483,8 @@ input::-webkit-inner-spin-button {
 
 /* Password Input */
 .password-input {
-  width: 415px;
+  width: 100%;
+  max-width: 415px;
   height: 50px;
   position: relative;
 }
@@ -545,6 +530,7 @@ input[type="button"].disable {
   background: #aaa !important;
   color: #fff;
   border: 2px solid #aaa !important;
+  cursor: pointer;
 }
 
 input[type="submit"]:valid,
@@ -597,6 +583,7 @@ input[type="button"]:invalid {
   user-select: none;
   transform: scaleY(0.6);
   font-weight: bold;
+  border-radius: 30px;
 }
 
 .select-input .sel-icons img {
@@ -644,7 +631,8 @@ input[type="date"] {
 }
 
 .date-input {
-  width: 415px;
+  width: 100%;
+  max-width: 415px;
   height: 50px;
   position: relative;
   background: transparent;
@@ -694,8 +682,8 @@ input[type="date"] {
 
   display: grid;
   grid-template-columns:
-    minmax(250px, 2fr) minmax(150px, 1fr) minmax(100px, 1fr)
-    minmax(100px, 1fr);
+    minmax(200px, 1fr) minmax(200px, 1fr) minmax(150px, 1fr) minmax(100px, 1fr)
+    minmax(200px, 1fr);
   gap: 15px;
 }
 

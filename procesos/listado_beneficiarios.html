@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISET</title>
+
+    
+
+ <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <div class="logo-priset">
+                <img src="../assets/img/logos/logo_priset.svg" alt="">
+            </div>
+            <div class="logos-gob">
+                <img src="../assets/img/logos/logo_gob_sj.svg" alt="">
+                
+                <div class="linea-vertical"></div>
+                
+                <img src="../assets/img/logos/logo_mdhyps.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-listado-beneficiario">
+        <div class="flecha-volver container">
+            <span style="font-weight: bold;">&#8592;</span> Volver
+        </div>
+
+        <h2 style="padding: 10px 0 !important;">Módulo alimentario</h2>
+
+        <div class="separador-naranja">
+            <div class="separador-texto">
+                <h3>Listado de beneficiarios</h3>
+            </div>
+            <div class="borde-naranja"></div>
+        </div>
+
+        <form action="" onchange="filtrarTabla({
+            evalucion_social: evalucion_social.value,
+            beneficio: beneficio.value,
+            tipo: tipo.value
+        })">
+            <div class="filtros-beneficiarios container">
+                <div class="filter_evalucion">
+                    <h3>Evaluación Social</h3>
+                    <select name="evalucion_social" id="evalucion_social">
+                        <option value="todos">Todos</option>
+                        <option value="aprobado">Aprobado</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="desaprobado">Desaprobado</option>
+                    </select>
+                </div>
+
+                <div class="filter_evalucion">
+                    <h3>Beneficio</h3>
+                    <select name="beneficio" id="beneficio">
+                        <option value="todos">Todos</option>
+                        <option value="unica">Por única vez</option>
+                        <option value="continuo">Continuo / Permanente</option>
+                    </select>
+                </div>
+
+                <div class="filter_evalucion">
+                    <h3>Tipo de programa</h3>
+                    <select name="tipo" id="tipo">
+                        <option value="todos">Todos</option>
+                        <option value="estandar">Módulo estándar</option>
+                        <option value="diabetico">Módulo para diabéticos</option>
+                    </select>
+                </div>
+
+                <div class="filter_evalucion">
+                    <h3>Municipio</h3>
+                    <select name="municipio" id="municipio">
+                        <option value="todos">Todos</option>
+                        <option value="todos">9 de Julio</option>
+                        <option value="todos">25 de Mayo</option>
+                        <option value="todos">...</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <div class="tabla__beneficiarios container">
+            <div class="tabla__beneficiarios__titulos primer_fila">
+                <div class="tabla__id">#</div>
+                <div class="tabla__evaluacion">Evaluación social</div>
+                <div class="tabla__apellido">Apellido</div>
+                <div class="tabla__nombre">Nombre</div>
+                <div class="tabla__cuil">Cuil</div>
+                <div class="tabla__documentacion">Documentación completa</div>
+                <div class="tabla__beneficio">Beneficio</div>
+                <div class="tabla__tipo">Tipo de programa</div>
+                <div class="tabla__cantidad">Cantidad a entregar</div>
+                <div class="tabla__ver">Ver</div>
+            </div>
+
+            <div class="tabla__beneficiarios__info">
+                <div class="tabla__id">1</div>
+                <div class="tabla__evaluacion"><img src="../assets/img/iconos/aprobado.svg" alt=""></div>
+                <div class="tabla__apellido">Baez</div>
+                <div class="tabla__nombre">Lucas</div>
+                <div class="tabla__cuil">00-000000000-0</div>
+                <div class="tabla__documentacion">No</div>
+                <div class="tabla__beneficio">Continuo</div>
+                <div class="tabla__tipo">Estándar</div>
+                <div class="tabla__cantidad">1</div>
+                <div class="tabla__ver"><img src="../assets/img/iconos/lupa.svg" alt=""></div>
+            </div>
+            
+            <div class="tabla__beneficiarios__info">
+                <div class="tabla__id">2</div>
+                <div class="tabla__evaluacion"><img src="../assets/img/iconos/pendiente.svg" alt=""></div>
+                <div class="tabla__apellido">Baez</div>
+                <div class="tabla__nombre">Lucas</div>
+                <div class="tabla__cuil">00-000000000-0</div>
+                <div class="tabla__documentacion">No</div>
+                <div class="tabla__beneficio">Continuo</div>
+                <div class="tabla__tipo">Diabético</div>
+                <div class="tabla__cantidad">1</div>
+                <div class="tabla__ver"><img src="../assets/img/iconos/lupa.svg" alt=""></div>
+            </div>
+
+            <div class="tabla__beneficiarios__info">
+                <div class="tabla__id">3</div>
+                <div class="tabla__evaluacion"><img src="../assets/img/iconos/desaprobado.svg" alt=""></div>
+                <div class="tabla__apellido">Baez</div>
+                <div class="tabla__nombre">Lucas</div>
+                <div class="tabla__cuil">00-000000000-0</div>
+                <div class="tabla__documentacion">Sí</div>
+                <div class="tabla__beneficio">Única vez</div>
+                <div class="tabla__tipo">Diabético</div>
+                <div class="tabla__cantidad">2</div>
+                <div class="tabla__ver"><img src="../assets/img/iconos/lupa.svg" alt=""></div>
+            </div>
+
+            <div class="tabla__beneficiarios__info">
+                <div class="tabla__id">4</div>
+                <div class="tabla__evaluacion"><img src="../assets/img/iconos/pendiente.svg" alt=""></div>
+                <div class="tabla__apellido">Baez</div>
+                <div class="tabla__nombre">Lucas</div>
+                <div class="tabla__cuil">00-000000000-0</div>
+                <div class="tabla__documentacion">Sí</div>
+                <div class="tabla__beneficio">Continuo</div>
+                <div class="tabla__tipo">Diabético</div>
+                <div class="tabla__cantidad">1</div>
+                <div class="tabla__ver"><img src="../assets/img/iconos/lupa.svg" alt=""></div>
+            </div>
+        </div>
+        <style>
+            .tabla__beneficiarios {
+                width: fit-content !important;
+                margin-bottom: 50px;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__titulos,
+            .tabla__beneficiarios .tabla__beneficiarios__info {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 
+                                        minmax(50px, 1fr)
+                                        minmax(100px, 1fr)
+                                        minmax(100px, 1fr)
+                                        minmax(100px, 1fr)
+                                        minmax(150px, 1fr)
+                                        minmax(150px, 1fr)
+                                        minmax(100px, 1fr)
+                                        minmax(100px, 1fr)
+                                        minmax(150px, 1fr)
+                                        minmax(100px, 1fr);
+                gap: 2px;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__titulos,
+            .tabla__beneficiarios .tabla__beneficiarios__info {
+                background: #ccc;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__titulos > div {
+                padding: 15px;
+                text-align: center;
+                background: var(--color-1);
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__info > div {
+                padding: 15px;
+                text-align: center;
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__info:nth-child(even) > div {
+                background: #f4f4f4;
+            }
+            .tabla__beneficiarios .tabla__beneficiarios__info:nth-child(odd) > div {
+                background: #fff;
+            }
+            .tabla__evaluacion img,
+            .tabla__ver img {
+                width: 25px;
+                height: 25px;
+            }
+            .tabla__ver img {
+                cursor: pointer;
+            }
+            .filtros-beneficiarios {
+                margin: 50px 0;
+                display: flex;
+                gap: 20px;
+            }
+            .filtros-beneficiarios h3 {
+                margin: 10px 0;
+            }
+        </style>
+    </main>
+
+    <footer class="footer-mini">
+        <div class="logo-redes">
+            <img src="../assets/img/logo-blanco.png" alt="Logo Gobierno footer">
+            <div class="footer-redes">
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="beneficiarios.js"></script>
+</body>
+</html>

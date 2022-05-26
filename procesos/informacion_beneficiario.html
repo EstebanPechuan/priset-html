@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISET</title>
+
+    
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <div class="logo-priset">
+                <img src="../assets/img/logos/logo_priset.svg" alt="">
+            </div>
+            <div class="logos-gob">
+                <img src="../assets/img/logos/logo_gob_sj.svg" alt="">
+                
+                <div class="linea-vertical"></div>
+                
+                <img src="../assets/img/logos/logo_mdhyps.svg" alt="">
+            </div>
+        </div>
+    </header>    
+    <main class="main-dashboard">
+        <div class="contenido-perfil container">
+            <div class="header-perfil">
+                <h2>Mi perfil</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <!-- {{-- Traer datos de base de datos --}} -->
+            <div class="datos__completados">
+                <p>Datos personales</p>
+                <div class="inputs_datos">
+                    <div class="input">
+                        Nombre y Apellido
+                    </div>
+                    <div class="input">Fecha de Nacimiento</div>
+                    <div class="input">Género</div>
+                    <div class="input">Cuil</div>
+                    <div class="input">Nacionalidad</div>
+                    <div class="input">Provincia</div>
+                    <div class="input">Localidad / Departamento</div>
+                    <div class="input">Barrio</div>
+                    <div class="input">Dirección</div>
+                    <div class="input">Teléfono fijo</div>
+                    <div class="input">Celular</div>
+                    <div class="input">Mail</div>
+                    <div class="input">Estado Civil</div>
+                    <div class="input">Grupo familiar</div>
+                </div>
+
+                <p>Grupo familiar</p>
+                <div class="tabla__datos">
+                    <div class="datos__fila">
+                        <div class="nombre_final">Nombre y Apellido</div>
+                        <div class="cuil_final">Cuil</div>
+                        <div class="edad_final">Edad</div>
+                        <div class="parentesco_final">Parentesco</div>
+                    </div>
+
+                    <div class="datos__fila">
+                        <div class="nombre_final">Nombre y Apellido</div>
+                        <div class="cuil_final">Cuil</div>
+                        <div class="edad_final">Edad</div>
+                        <div class="parentesco_final">Parentesco</div>
+                    </div>
+
+                    <div class="datos__fila">
+                        <div class="nombre_final">Nombre y Apellido</div>
+                        <div class="cuil_final">Cuil</div>
+                        <div class="edad_final">Edad</div>
+                        <div class="parentesco_final">Parentesco</div>
+                    </div>
+                </div>
+
+                <hr style="margin: 30px auto;">
+
+                <div class="inputs_datos">
+                    <div class="input">
+                        Conectividad a internet
+                    </div>
+                    <div class="input">
+                        Tipo de conectividad
+                    </div>
+                </div>
+
+                <p>Ficha de salud</p>
+                <div class="inputs_datos">
+                    <div class="input">Grupo sanguíneo</div>
+                    <div class="input">Peso</div>
+                    <div class="input">Altura</div>
+                    <div class="input">¿Posee enfermedades crónicas?</div>
+                    <div class="input">¿Toma medicaciín diarimente?</div>
+                    <div class="input">¿Posee alguna discapacidad?</div>
+                    <div class="input">Vacunas</div>
+                    <div class="input">Cobertura médico asistencial</div>
+                </div>
+
+                <p>Educación</p>
+                <div class="inputs_datos">
+                    <div class="input">Educación alcanzada</div>
+                    <div class="input">Estudios complementarios</div>
+                    <div class="input">Profesión</div>
+                    <div class="input">Ocupación</div>
+                    <div class="input">Cursos de Artes y Oficios</div>
+                </div>
+
+                <p>Datos de la vivienda</p>
+                <div class="inputs_datos">
+                    <div class="input">Propiedad</div>
+                    <div class="input">Tipo de construcción</div>
+                    <div class="input">Tipo de baño</div>
+                    <div class="input">Tipo de agua</div>
+                    <div class="input">Cloaca</div>
+                    <div class="input">Iluminación</div>
+                    <div class="input">Tipo de techo</div>
+                    <div class="input">Tipo de pared</div>
+                    <div class="input">Tipo de piso</div>
+                    <div class="input">Cantidad de ambientes</div>
+                </div>
+
+                <p>Contraseña</p>
+                <div class="inputs_datos">
+                    <div class="input">Contraseña</div>
+                    <div class="input">Repetir contraseña</div>
+                </div>
+            </div>
+
+            <!-- <div class="d-flex-center" style="margin: 50px 0 30px;">
+                
+                <x-buttons.fill-naranja href="{{route('SolicitudDeDatosPersona')}}">
+                    Editar información
+                </x-buttons.fill-naranja>
+            </div> -->
+        </div>
+    </main>
+
+    <footer class="footer-mini">
+        <div class="logo-redes">
+            <img src="../assets/img/logo-blanco.png" alt="Logo Gobierno footer">
+            <div class="footer-redes">
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="beneficiarios.js"></script>
+    
+    <style>
+        .inputs_datos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 10px;
+        }
+        .input {
+            width: 100%;
+        }
+    </style>
+</body>
+</html>

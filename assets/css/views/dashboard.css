@@ -1,103 +1,304 @@
-.main-dashboard {
-    display: flex;
+/* .main-dashboard {
+  display: flex;
 }
 
 .contenido-perfil {
-    width: 100%;
+  width: 100%;
 }
 
 .contenido-perfil .header-perfil {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contenido-perfil h2 {
-    padding: 30px 0;
-    color: var(--color-1);
-    font-size: 30px;
-    text-align: left;
+  padding: 30px 0;
+  color: var(--color-1);
+  font-size: 30px;
+  text-align: left;
 }
 
 .contenido-perfil form {
-    position: relative;
+  position: relative;
 }
 
 .contenido-perfil form input {
-    width: 300px;
-    height: 35px;
-    border: 1px solid var(--color-1);
-    border-radius: 30px;
+  width: 300px;
+  height: 35px;
+  border: 1px solid var(--color-1);
+  border-radius: 30px;
 }
 
 .contenido-perfil form label {
-    width: 35px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--color-1);
-    border-radius: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 35px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenido-perfil form label > * {
-    filter: invert();
-    transform: scale(0.8);
+  filter: invert();
+  transform: scale(0.8);
 }
 
+.completar-datos {
+  width: 100%;
+  padding: 30px 50px;
+  background: #f4f4ff;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.completar-datos .completar-head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.completar-datos .completar-head p {
+  font-family: var(--ff-medium);
+}
+
+.completar-datos .completar-head img {
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+
+.completar-datos .completar-head {
+  font-size: 24px;
+  color: var(--color-1);
+  font-family: var(--ff-medium);
+}
+
+.completar-datos p {
+  text-align: center;
+}
+
+.contenido-perfil .select-input select {
+  border-radius: 50px;
+}
+
+.contenido-perfil .select-input .tap-blan {
+  border-radius: 0 50px 50px 0;
+} */
+
+.main-dashboard {
+  display: flex;
+}
+
+.contenido-perfil {
+  width: 100%;
+}
+
+.contenido-perfil .header-perfil {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenido-perfil h2 {
+  padding: 30px 0;
+  color: var(--color-1);
+  font-size: 30px;
+  text-align: left;
+}
+
+.contenido-perfil form {
+  position: relative;
+}
+
+.contenido-perfil form input {
+  /* width: 300px; */
+  height: 35px;
+  border: 1px solid var(--color-1);
+  border-radius: 30px;
+}
+
+.contenido-perfil form label {
+  width: 35px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-perfil form label > * {
+  filter: invert();
+  transform: scale(0.8);
+}
 
 /* Alerta para Completar Datos */
 
 .completar-datos {
-    width: 100%;
-    padding: 30px 50px;
-    background: #f4f4ff;
-    border-radius: 8px;
+  width: 100%;
+  padding: 30px 50px;
+  background: #f4f4ff;
+  border-radius: 8px;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .completar-datos .completar-head {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .completar-datos .completar-head p {
-    font-family: var(--ff-medium);
+  font-family: var(--ff-medium);
 }
 
 .completar-datos .completar-head img {
-    width: 40px;
-    aspect-ratio: 1/1;
+  width: 40px;
+  aspect-ratio: 1/1;
 }
 
 .completar-datos .completar-head {
-    font-size: 24px;
-    color: var(--color-1);
-    font-family: var(--ff-medium);
+  font-size: 24px;
+  color: var(--color-1);
+  font-family: var(--ff-medium);
 }
 
 .completar-datos p {
-    text-align: center;
+  text-align: center;
 }
 
-
 .contenido-perfil .select-input select {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 .contenido-perfil .select-input .tap-blan {
-    border-radius: 0 50px 50px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.tabla__datos {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.datos__fila {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-auto-rows: 40px;
+}
+
+.datos__fila:nth-child(odd),
+.notificacion__fila:nth-child(even),
+.turnos__fila:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.datos__fila > *,
+.turnos__fila > * {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  /* font-family: var(--ff-medium); */
+}
+
+.notificacion__fila {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px repeat(3, 1fr);
+  grid-auto-rows: 50px;
+}
+
+.turnos__fila {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 2fr 1fr;
+  grid-auto-rows: 50px;
+}
+
+.notificacion__fila:first-child,
+.turnos__fila:first-child {
+  background: #fff;
+}
+
+.notificacion__fila:first-child > *,
+.turnos__fila:first-child > * {
+  font-family: var(--ff-bold) !important;
+  font-size: 18px;
+}
+
+.notificacion__fila > *,
+.turnos__fila > * {
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: var(--ff-medium); */
+}
+
+.datos__completados {
+  margin: 30px 0;
+}
+
+.datos__completados > p,
+.requisitos > p {
+  color: var(--color-1);
+  font-family: var(--ff-medium);
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.inputs_datos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.requisitos {
+  font-size: 16px;
+}
+
+.requisitos .informacion__programa > li {
+  margin: 20px 10px !important;
+  font-family: var(--ff-medium);
+  font-size: 20px;
+  list-style-position: inside;
+}
+
+.requisitos .informacion__programa li {
+  margin: 10px 0 10px 20px;
+}
+
+.modulos__dashboard {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
