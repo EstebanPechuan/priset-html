@@ -99,7 +99,7 @@
             </div>
         </div>
 
-        <div class="contenido-perfil container">
+        <div class="contenido-perfil container" id="modulo_general">
             <div class="header-perfil">
                 <h2>Módulos</h2>
 
@@ -121,7 +121,7 @@
             </div>
 
             <div class="modulos__dashboard">
-                <div class="card-modulos">
+                <div class="card-modulos" onclick="openModulos('modulo_registro')">
                     <div class="modulos-img">
                         <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
                     </div>
@@ -131,7 +131,37 @@
                     </div>
                 </div>
 
-                <div class="card-modulos">
+                <div class="card-modulos" onclick="openModulos('modulo_prestaciones')">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Módulo de prestaciones</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos" onclick="openModulos('modulo_importacion')">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Módulo de importación de datos externos</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos" onclick="openModulos('modulo_deposito')">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Módulo de depósito y stock</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos" onclick="openModulos('modulo_informes')">
                     <div class="modulos-img">
                         <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
                     </div>
@@ -141,6 +171,206 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="contenido-perfil container d-none" id="modulo_registro">
+            <div class="flecha-volver" onclick="openModulos('modulo_general')">
+                <span style="font-weight: bold;">&#8592;</span> Volver
+            </div>
+            <div class="header-perfil">
+                <h2>Módulo de registro</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <div class="modulos__dashboard">
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Roles agentes del Ministerio</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Aprobación de roles Agentes del Ministerio</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4><a href="../../busqueda_programa.html">Aprobación de beneficiarios</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido-perfil container d-none" id="modulo_prestaciones">
+            <div class="flecha-volver" onclick="openModulos('modulo_general')">
+                <span style="font-weight: bold;">&#8592;</span> Volver
+            </div>
+            <div class="header-perfil">
+                <h2>Módulo de prestaciones</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <div class="modulos__dashboard">
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Entrega de programas</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Actualizar datos del beneficiario</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido-perfil container d-none" id="modulo_importacion">
+            <div class="flecha-volver" onclick="openModulos('modulo_general')">
+                <span style="font-weight: bold;">&#8592;</span> Volver
+            </div>
+            <div class="header-perfil">
+                <h2>Módulo de importación de datos externos</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <!-- <div class="modulos__dashboard">
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Entrega de programas</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Actualizar datos del beneficiario</h4>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="contenido-perfil container d-none" id="modulo_deposito">
+            <div class="flecha-volver" onclick="openModulos('modulo_general')">
+                <span style="font-weight: bold;">&#8592;</span> Volver
+            </div>
+            <div class="header-perfil">
+                <h2>Módulo de depósito y stock</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <!-- <div class="modulos__dashboard">
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Entrega de programas</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Actualizar datos del beneficiario</h4>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="contenido-perfil container d-none" id="modulo_informes">
+            <div class="flecha-volver" onclick="openModulos('modulo_general')">
+                <span style="font-weight: bold;">&#8592;</span> Volver
+            </div>
+            <div class="header-perfil">
+                <h2>Módulo de informes y estadísticas</h2>
+
+                <form action="">
+                    <input id="buscar-perfil" type="text" placeholder="¿Que deseas buscar?">
+                    <label for="buscar-perfil">
+                        <box-icon name='search'></box-icon>
+                    </label>
+                </form>
+            </div>
+
+            <!-- <div class="modulos__dashboard">
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Entrega de programas</h4>
+                    </div>
+                </div>
+
+                <div class="card-modulos">
+                    <div class="modulos-img">
+                        <img src="../../assets/img/iconos/iconos -SVG rojos/03-tramites.svg" alt="">
+                    </div>
+            
+                    <div class="modulos-titulo">
+                        <h4>Actualizar datos del beneficiario</h4>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </main>
 
@@ -155,6 +385,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function openModulos(modulo) {
+            const sectionModulo = document.querySelector(`#${modulo}`)
+            const contenidoPerfil = document.querySelectorAll('.contenido-perfil')
+
+            contenidoPerfil.forEach(item => {
+                item.classList.add('d-none')
+            });
+
+            sectionModulo.classList.remove('d-none')
+        }
+    </script>
 
     <script src="../../assets/js/main.js"></script>
 </body>

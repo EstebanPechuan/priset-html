@@ -3,6 +3,7 @@
   margin: 20px 0;
   font-family: var(--ff-bold);
   font-size: 20px;
+  cursor: pointer;
 }
 
 /* === Franja Naranja === */
@@ -74,6 +75,29 @@
   background: var(--color-2) !important;
 }
 
+.btn.btn-ghost-naranja {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-2) !important;
+  border: 2px solid var(--color-2) !important;
+  background: #fff !important;
+}
+
+.btn-fill-naranja:hover {
+  box-shadow: inset -2px -2px 5px #0002;
+}
+
+.btn.btn-ghost-naranja:hover {
+  box-shadow: inset -2px -2px 5px #0002;
+}
+
 .btn-bg-gris {
   width: 415px;
   height: 50px;
@@ -97,6 +121,36 @@
   margin-left: 4px;
 }
 
+
+.btn-fill-verde {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff !important;
+  border: 2px solid #2EB000 !important;
+  background: #2EB000 !important;
+}
+
+.btn.btn-ghost-verde {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #2EB000 !important;
+  border: 2px solid #2EB000 !important;
+  background: #fff !important;
+}
 /* === Botón Card === */
 
 .card-priset {
@@ -877,4 +931,44 @@ input[type="date"] {
     #f29200 81.25%,
     #fce579 100%
   );
+}
+
+
+.modalBox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #0007;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContent {
+  max-width: 700px;
+  padding: 50px 100px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modalContent h2 {
+  padding: 0;
+  font-size: 24px;
+  color: var(--color-1);
+}
+.modalContent div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #000;
+}
+.modalContent div p {
+  font-family: var(--ff-bold);
+}
+.modalContent div p span {
+  color: #0009;
 }

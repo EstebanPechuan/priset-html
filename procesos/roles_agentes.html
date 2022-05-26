@@ -35,66 +35,63 @@
             </a>
         </div>
 
-        <h2 style="padding: 10px 0 !important;">Módulo alimentario</h2>
+        <h2 style="padding: 10px 0 !important;">Agentes del Ministerio</h2>
 
         <div class="separador-naranja">
             <div class="separador-texto">
-                <h3>Listado de beneficiarios</h3>
+                <h3>Roles</h3>
             </div>
             <div class="borde-naranja"></div>
         </div>
 
         <form action="" onchange="filtrarTabla({
-            evalucion_social: evalucion_social.value,
-            beneficio: beneficio.value,
-            tipo: tipo.value
+            rolAgente: rolAgente.value
         })">
-            <div class="filtros-beneficiarios container">
-                <div class="filter_evaluacion">
-                    <h3>Evaluación Social</h3>
-                    <select name="evalucion_social" id="evalucion_social">
+            <div class="filtros-agentes container">
+                <div class="filter_agente">
+                    <h3>Roles</h3>
+                    <select name="rolAgente" id="rolAgente">
                         <option value="todos">Todos</option>
-                        <option value="aprobado">Aprobado</option>
-                        <option value="pendiente">Pendiente</option>
-                        <option value="desaprobado">Desaprobado</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="coordinador">Coordinador</option>
+                        <option value="creador">Creador</option>
+                        <option value="visor">Visor</option>
                     </select>
                 </div>
 
-                <div class="filter_evaluacion">
-                    <h3>Beneficio</h3>
-                    <select name="beneficio" id="beneficio">
-                        <option value="todos">Todos</option>
-                        <option value="unica">Por única vez</option>
-                        <option value="continuo">Continuo / Permanente</option>
-                    </select>
-                </div>
-
-                <div class="filter_evaluacion">
-                    <h3>Tipo de programa</h3>
-                    <select name="tipo" id="tipo">
-                        <option value="todos">Todos</option>
-                        <option value="estandar">Módulo estándar</option>
-                        <option value="diabetico">Módulo para diabéticos</option>
-                    </select>
-                </div>
-
-                <div class="filter_evaluacion">
-                    <h3>Municipio</h3>
-                    <select name="municipio" id="municipio">
-                        <option value="todos">Todos</option>
-                        <option value="todos">9 de Julio</option>
-                        <option value="todos">25 de Mayo</option>
-                        <option value="todos">...</option>
-                    </select>
+                <div class="nuevo_agente">
+                    <a href="./nuevo_rol.html" class="btn disable">+ Nuevo rol</a>
                 </div>
             </div>
         </form>
 
         <div class="scrollX">
-            <div class="tabla__beneficiarios container">
-                <!-- Acá se importan los beneficiarios desde JS -->
+            <div class="tabla__agentes container">
+                <!-- Acá se importan los agentes desde JS -->
             </div>
         </div>
+
+        <div class="modalBox d-none" id="eliminarAgente">
+            <div class="modalContent">
+                <img src="../assets/img/check.png" alt="">
+                
+                <h2 style="font-family: var(--ff-regular);">Eliminar usuario</h2>
+                
+                <p>¿Estás seguro que deseas eliminar este usuario?</p>
+                
+                <div class="d-flex-center" style="gap: 20px;">
+                    <div onclick="closeModalDelete()">
+                        <a href="#" class="btn-fill-verde" style="max-width: 150px;">Si</a>
+                    </div>
+                    <div class="flecha-volver" style="margin: 0;" onclick="closeModalDelete()">
+                        <a href="#">
+                            <span style="font-weight: bold;">&#8592;</span> Volver
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <style>
             .scrollX {
                 overflow-y: scroll;
@@ -102,33 +99,27 @@
             .scrollX::-webkit-scrollbar {
                 width: 0px;
             }
-            .tabla__beneficiarios {
-                width: fit-content !important;
+            .tabla__agentes {
+                /* width: fit-content !important; */
                 margin-bottom: 50px;
                 overflow-x: scroll;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__titulos,
-            .tabla__beneficiarios .tabla__beneficiarios__info {
+            .tabla__agentes .tabla__agentes__titulos,
+            .tabla__agentes .tabla__agentes__info {
                 width: 100%;
                 display: grid;
                 grid-template-columns: 
-                                        minmax(30px, 1fr)
-                                        minmax(100px, 1fr)
-                                        minmax(100px, 1fr)
-                                        minmax(100px, 1fr)
-                                        minmax(150px, 1fr)
-                                        minmax(150px, 1fr)
-                                        minmax(100px, 1fr)
-                                        minmax(100px, 1fr)
-                                        minmax(150px, 1fr)
+                                        minmax(250px, 2fr)
+                                        minmax(200px, 2fr)
+                                        minmax(150px, 2fr)
                                         minmax(100px, 1fr);
                 gap: 2px;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__titulos,
-            .tabla__beneficiarios .tabla__beneficiarios__info {
+            .tabla__agentes .tabla__agentes__titulos,
+            .tabla__agentes .tabla__agentes__info {
                 background: #ccc;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__titulos > div {
+            .tabla__agentes .tabla__agentes__titulos > div {
                 padding: 15px;
                 text-align: center;
                 background: var(--color-1);
@@ -137,7 +128,7 @@
                 justify-content: center;
                 align-items: center;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__info > div {
+            .tabla__agentes .tabla__agentes__info > div {
                 padding: 15px;
                 text-align: center;
                 color: #000;
@@ -145,10 +136,10 @@
                 justify-content: center;
                 align-items: center;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__info:nth-child(even) > div {
+            .tabla__agentes .tabla__agentes__info:nth-child(even) > div {
                 background: #f4f4f4;
             }
-            .tabla__beneficiarios .tabla__beneficiarios__info:nth-child(odd) > div {
+            .tabla__agentes .tabla__agentes__info:nth-child(odd) > div {
                 background: #fff;
             }
             .tabla__evaluacion img,
@@ -159,20 +150,43 @@
             .tabla__ver img {
                 cursor: pointer;
             }
-            .filtros-beneficiarios {
+            .filtros-agentes {
                 margin: 50px 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: 50px;
                 gap: 20px 50px;
             }
-            .filtros-beneficiarios .filter_evaluacion {
+            .filtros-agentes .filter_agente {
                 display: grid;
                 grid-template-columns: 200px 1fr;
                 gap: 0;
             }
-            .filtros-beneficiarios h3 {
+            .filtros-agentes h3 {
                 margin: 10px 0;
+            }
+            .tabla__rol {
+                text-transform: capitalize;
+            }
+            .tabla__acciones {
+                display: flex;
+                gap: 10px;
+            }
+            .tabla__acciones button {
+                border: none;
+                background: transparent;
+                cursor: pointer;
+            }
+            .tabla__acciones img {
+                width: 25px;
+            }
+            .nuevo_agente {
+                display: flex;
+                justify-content: end;
+            }
+            .modalContent img {
+                width: 30px;
+                margin: 0 auto -25px;
             }
         </style>
     </main>
@@ -189,7 +203,18 @@
         </div>
     </footer>
 
+    <script>
+        function openModalDelete(tipo) {
+            let elemento = document.querySelector('#eliminarAgente')
+            elemento.classList.remove('d-none')
+        }
+        function closeModalDelete(tipo) {
+            let elemento = document.querySelector('#eliminarAgente')
+            elemento.classList.add('d-none')
+        }
+    </script>
+    
     <script src="../assets/js/main.js"></script>
-    <script src="beneficiarios.js"></script>
+    <script src="roles_agentes.js"></script>
 </body>
 </html>
