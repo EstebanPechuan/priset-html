@@ -121,7 +121,6 @@
   margin-left: 4px;
 }
 
-
 .btn-fill-verde {
   width: 200px !important;
   height: 47px;
@@ -133,8 +132,8 @@
   align-items: center;
 
   color: #fff !important;
-  border: 2px solid #2EB000 !important;
-  background: #2EB000 !important;
+  border: 2px solid #2eb000 !important;
+  background: #2eb000 !important;
 }
 
 .btn.btn-ghost-verde {
@@ -147,8 +146,8 @@
   justify-content: center;
   align-items: center;
 
-  color: #2EB000 !important;
-  border: 2px solid #2EB000 !important;
+  color: #2eb000 !important;
+  border: 2px solid #2eb000 !important;
   background: #fff !important;
 }
 /* === Botón Card === */
@@ -771,7 +770,7 @@ input[type="date"] {
   box-shadow: 4px 4px 4px #0004;
   border-radius: 0 0 100px 0;
   position: sticky;
-  top: var(--altura-header);
+  /* top: var(--altura-header); */
   overflow: hidden;
 
   display: flex;
@@ -933,7 +932,6 @@ input[type="date"] {
   );
 }
 
-
 .modalBox {
   position: fixed;
   width: 100vw;
@@ -971,4 +969,29 @@ input[type="date"] {
 }
 .modalContent div p span {
   color: #0009;
+}
+
+.alert {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.alert-pry {
+  background: #cfe2ff;
+  border: 1px solid #b6d4fe;
+  color: #084298;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  border: 1px solid #f5c2c7;
+  color: #842029;
+}
+
+.alert-warning {
+  background: #fff3cd;
+  border: 1px solid #ffecb5;
+  color: #664d03;
 }

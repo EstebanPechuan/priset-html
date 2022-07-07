@@ -9,6 +9,36 @@
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .voucher-content {
+            max-width: 800px;
+            padding: 30px 100px;
+            border: 1px solid #9e1425;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .voucher-content h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #9e1425;
+        }
+        .voucher-content p {
+            font-size: 16px;
+        }
+        .voucher-content img {
+            width: 70px;
+            margin: 10px auto;
+        }
+        .voucher-content .ultimo-mensaje {
+            font-size: 14px;
+            color: #0006;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,11 +63,24 @@
             </a>
         </div>
         
-        <div class="d-flex-center">
-            <img style="width: 600px; pointer-events: none; user-select: none;" src="modulo.png" alt="">
+        <div class="d-flex-center voucher">
+            <div class="voucher-content">
+                <h3>Módulo alimentario</h3>
+                <p><b>Nombre de la institución: </b>Lorem ipsum dolor sit amet.</p>
+                <p><b>Cuil: </b>00-00.000.000-0</p>
+                <p><b>Fecha de entrega: </b>dd/mm/aaaa</p>
+                <p><b>Horario de entrega: </b>00:00</p>
+                <p><b>Lugar de entrega: </b>Lorem ipsum dolor sit amet.</p>
+                <p><b>Cantidad de módulos: </b>1</p>
+
+                <img src="qr.png" alt="">
+
+                <p class="ultimo-mensaje">No te olvides que debes asistir solamente el día que te fue asignado con tu DNI en mano y este cupón de entrega impreso, descargado en tu celular o mostrarlo a través de esta plataforma.</p>
+            </div>
+            <!-- <img style="width: 600px; pointer-events: none; user-select: none;" src="modulo.png" alt=""> -->
         </div>
 
-        <div class="d-flex-center" style="margin-top: 20px; gap: 20px;">
+        <div class="d-flex-center" style="margin: 20px 0; gap: 20px;">
             <img style="width: 200px; cursor: pointer; pointer-events: none; user-select: none;" src="entregado.png" alt="">
             <img style="width: 200px; cursor: pointer; pointer-events: none; user-select: none;" src="pendiente.png" alt="">
         </div>
