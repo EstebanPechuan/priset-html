@@ -995,3 +995,9 @@ input[type="date"] {
   border: 1px solid #ffecb5;
   color: #664d03;
 }
+
+.alert-success {
+  background: #badbcc;
+  border: 1px solid #d1e7dd;
+  color: #0f5132;
+}
