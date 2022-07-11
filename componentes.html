@@ -686,21 +686,31 @@
         
         <div class="alert alert-pry">
             ALERT-PRY -- Texto de muestra
+            <div class="closeAlert" onclick="closeAlert(event)">&#10006;</div>
         </div>
 
         <div class="alert alert-danger">
             ALERT-DANGER -- Texto de muestra
+            <div class="closeAlert" onclick="closeAlert(event)">&#10006;</div>
         </div>
 
         <div class="alert alert-warning">
             ALERT-WARNING -- Texto de muestra
+            <div class="closeAlert" onclick="closeAlert(event)">&#10006;</div>
         </div>
 
         <div class="alert alert-success">
             ALERT-SUCCESS -- Texto de muestra
+            <div class="closeAlert" onclick="closeAlert(event)">&#10006;</div>
         </div>
         
     </div>
+
+    <script>
+        const closeAlert = (e) => {
+            e.target.parentElement.remove()
+        }
+    </script>
 
     <script src="assets/js/main.js"></script>
 </body>
