@@ -1,9 +1,14 @@
 /* === Flecha Volver === */
 .flecha-volver {
-  margin: 20px 0;
+  margin: 20px 70px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
   font-family: var(--ff-bold);
   font-size: 20px;
   cursor: pointer;
+  background: var(--color-8);
+  width: fit-content;
 }
 
 /* === Franja Naranja === */
@@ -150,6 +155,35 @@
   color: #2EB000 !important;
   border: 2px solid #2EB000 !important;
   background: #fff !important;
+}
+
+.btn-fill-magenta {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff !important;
+border: 2px solid var(--color-8) !important;
+background: var(--color-8) !important;
+}
+
+.btn.btn-ghost-magenta {
+  width: 200px !important;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--ff-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-8) !important;
+border: 2px solid var(--color-8) !important;
 }
 /* === Botón Card === */
 
